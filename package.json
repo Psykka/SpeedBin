@@ -1,0 +1,17 @@
+{
+  "name": "speedbin",
+  "version": "0.0.1",
+  "description": "Paste a code and share!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.2",
+    "ejs": "^3.0.1"
+  },
+  "engines": {
+    "node": "13.x"
+  }
+}
