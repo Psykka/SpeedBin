@@ -31,9 +31,9 @@ if(window.location.href.split('/').pop()){
 async function saveButton() {
   const code = document.getElementById('textarea').value;
   if (!code) return;
-  const ID = await axios.post(`/documents`, { code });
-  console.log(ID);
-  window.location.href = `/${ID.data.key}`;
+  const { data } = await axios.post(`/documents`, { code });
+  console.log(data.key);
+  window.location.href = `/${data.key}`;
 }
 
 function newButton() {
@@ -55,12 +55,15 @@ function rawButton() {
 
 function shareButton() {
   const element = document.createElement('input');
-
   document.body.appendChild(element);
   element.value = `${window.location.href}`;
   element.select();
   document.execCommand('copy');
   document.body.removeChild(element);
+}
+
+function reportButton() {
+  window.location.href = 'https://github.com/Psykka/SpeedBin/issues';
 }
 
 function homeButton(){

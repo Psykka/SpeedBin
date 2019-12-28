@@ -19,25 +19,24 @@
       <div class="boxtop-2">
         <button onclick="saveButton()" title="Save" id="save"><i class="material-icons">save</i></button>
         <button onclick="newButton()" title="New file" id="new"><i class="material-icons">file_copy</i></button>
-        <button onclick="editButton()"title="Edit" id="edit"><i class="material-icons">edit</i></button>
-        <button onclick="rawButton()"title="Raw" id="raw"><i class="material-icons">code</i></button>
-        <button onclick="shareButton()"title="Share" id="share"><i class="material-icons">share</i></button>
-        <button title="Report a bug" id="bug"><i class="material-icons">bug_report</i></button>
+        <button onclick="editButton()" title="Edit" id="edit"><i class="material-icons">edit</i></button>
+        <button onclick="rawButton()" title="Raw" id="raw"><i class="material-icons">code</i></button>
+        <button onclick="shareButton()" title="Share" id="share"><i class="material-icons">share</i></button>
+        <button onclick="reportButton()" title="Report a bug" id="bug"><i class="material-icons">bug_report</i></button>
       </div>
     </header>
 
     <main>
       <span id="side">►</span>
-        <textarea id="textarea" <%= disabled ? `disabled` : '' %> spellcheck="false" placeholder="Paste a code"><%= !!code ? code : '' %></textarea>
+        <textarea id="textarea" spellcheck="false" placeholder="Paste a code"></textarea>
     </main>
   </body>
 </html>
 
-
 <!--<script src="https://cdn.jsdelivr.net/npm/codemirror@5.49.2/lib/codemirror.min.js"></script>
-    <link rel="stylesheet" href="/test.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script> -->
-<!--<div id="code"></div> -->
-<!-- <script type="text/javascript">
-    CodeMirror(document.getElementById('code'), { value: "function myScript(){return 100;}\n", mode: "javascript", lineNumbers: true});
+<link rel="stylesheet" href="/test.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/mode/javascript/javascript.js"></script>
+<div id="code"></div>
+<script type="text/javascript">
+CodeMirror(document.getElementById('code'), { value: "function myScript(){return 100;}\n", mode: "javascript", lineNumbers: true});
 </script> -->

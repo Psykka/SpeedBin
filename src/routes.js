@@ -6,14 +6,7 @@ routes.use('/documents', DocumentController);
 routes.use('/raw', RawController);
 
 routes.get('/*', (req, res) => {
-  res.render(__dirname + '/views/index.ejs', { code: '', disabled: false });
+  res.sendFile(__dirname + '/views/index.html');
 });
-
-// routes.get('/raw/:id', async (req, res) => res.json(await Mongo.index(req, res)));
-
-// routes.get('/:id', async (req, res) =>{
-//   const data = await Mongo.index(req, res);
-//   res.render(__dirname + '/views/index.ejs', { code: data.code, disabled: true });
-// });
 
 module.exports = routes;

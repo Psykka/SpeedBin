@@ -12,7 +12,6 @@ connect(process.env.MONGO_URI, {
 
 app.use(express.json());
 app.use(express.static('src/public'));
-app.set('view engine', 'ejs');
 
 app.use(require('./src/routes'));
 
