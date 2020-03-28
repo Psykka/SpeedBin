@@ -1,6 +1,6 @@
 {
   "name": "speedbin",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Paste a code and share!",
   "main": "server.js",
   "scripts": {
@@ -8,8 +8,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.8.2",
-    "ejs": "^3.0.1"
+    "mongoose": "^5.9.4"
   },
   "engines": {
     "node": "13.x"
