@@ -1,6 +1,6 @@
 {
   "name": "speedbin",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Paste a code and share!",
   "main": "server.js",
   "scripts": {
