@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
-@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 body, html {
   background-color: #282C34;
@@ -10,10 +9,11 @@ body, html {
 
 header, #side {
   position: absolute;
+  z-index: 2;
 }
 
-header {  
-  font-family: 'Raleway', 'arial';
+header {
+  font-family: "Raleway", "arial";
   right: 0;
   top: 0;
   text-align: center;
@@ -27,20 +27,7 @@ button {
   outline: none;
   margin: 0;
   padding: 0;
-}
-
-textarea {
-  scrollbar-width: none;
-  font-family: 'Fira Code';
-  font-feature-settings: "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "onum";
-  font-color: #fffff;
-  color: #ABB2BF;
-  width: 100%;
-  height: 96vh;
-  background-color: #282C34;
-  outline: none;
-  border: none;
-  resize: none;
+  cursor: pointer !important;
 }
 
 .noselect {
@@ -49,7 +36,45 @@ textarea {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; 
+  user-select: none;
+}
+
+.alert{
+  color: #282C34;
+  background-color: #5a6575;
+  opacity: 1;
+	animation: fadeInOut 3s ease-in;
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+  100% {
+		opacity: 0;
+	}
+}
+
+.load{
+  color: #282C34;
+  background-color: #5a6575;
+  opacity: 1;
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+  100% {
+		opacity: 0;
+	}
 }
 
 .boxtop {
@@ -57,7 +82,7 @@ textarea {
   background-color: #16191d;
   padding-top: 10px;
   padding-bottom: 10px;
-  transition: color .2s;
+  transition: color 0.2s;
 }
 
 .boxtop:hover {
@@ -70,7 +95,7 @@ textarea {
 
 .boxtop-2 i {
   color: #5a6575;
-  transition: color .1s;
+  transition: color 0.1s;
 }
 
 .boxtop-2 i:hover {
@@ -82,17 +107,19 @@ textarea {
 }
 
 #side {
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-top: 2px;
   display: block;
   left: 0;
   font-size: 16px;
-  max-height 15px;
+  max-height: 15px;
   color: #ABB2BF;
 }
 
 #logoText {
   font-style: italic;
-  transition: text-shadow .15s;
+  transition: text-shadow 0.15s;
+  cursor: pointer !important;
 }
 
 .boxtop:hover #logoText {
