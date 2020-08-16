@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+body, html {
+  background-color: #282C34;
+  margin-left: 15px;
+  margin-right: 30px;
+  scrollbar-width: none;
+}
+
+header, #side {
+  position: absolute;
+  z-index: 2;
+}
+
+header {
+  font-family: "Raleway", "arial";
+  right: 0;
+  top: 0;
+  text-align: center;
+  font-size: 30px;
+  width: 190px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.alert{
+  color: #282C34;
+  background-color: #5a6575;
+  opacity: 1;
+	animation: fadeInOut 3s ease-in;
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+  100% {
+		opacity: 0;
+	}
+}
+
+.load{
+  color: #282C34;
+  background-color: #5a6575;
+  opacity: 1;
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+  100% {
+		opacity: 0;
+	}
+}
+
+.boxtop {
+  color: #7289DA;
+  background-color: #16191d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: color 0.2s;
+}
+
+.boxtop:hover {
+  color: #fff;
+}
+
+.boxtop-2 {
+  background-color: #363c46;
+}
+
+.boxtop-2 i {
+  color: #5a6575;
+  transition: color 0.1s;
+}
+
+.boxtop-2 i:hover {
+  color: #fff;
+}
+
+.disable i {
+  color: #282C34 !important;
+}
+
+#side {
+  margin-left: 20px;
+  margin-top: 2px;
+  display: block;
+  left: 0;
+  font-size: 16px;
+  max-height: 15px;
+  color: #ABB2BF;
+}
+
+#logoText {
+  font-style: italic;
+  transition: text-shadow 0.15s;
+  cursor: pointer !important;
+}
+
+.boxtop:hover #logoText {
+  text-shadow: 3px 0px gray;
+}
+
+::-webkit-scrollbar {
+  margin-right: 20px;
+  width: 10px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background: #5a6575;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #16191d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #16191d;
+}

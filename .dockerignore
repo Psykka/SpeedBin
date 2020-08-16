@@ -1,0 +1,12 @@
+node_modules/
+ssl/
+
+.env
+.gitignore
+.eslintrc
+.editorconfig
+.env.exaple
+
+LICENSE
+README.md
+*Dockerfile*

@@ -1,0 +1,28 @@
+{
+  "name": "speedbin",
+  "version": "1.0.0",
+  "description": "Paste a code and share!",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon -r dotenv/config ."
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0"
+  },
+  "engines": {
+    "node": ">=13.x"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.7.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.4"
+  }
+}
