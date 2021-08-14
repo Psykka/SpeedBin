@@ -5,7 +5,7 @@ WORKDIR /usr/app
 COPY package.json .
 COPY yarn.lock .
 
-RUN apk add python3
+RUN apk add python3 alpine-sdk
 RUN yarn --prod
 
 COPY . .
