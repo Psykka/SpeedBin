@@ -5,6 +5,7 @@ WORKDIR /usr/app
 COPY package.json .
 COPY yarn.lock .
 
+RUN apk add python3
 RUN yarn --prod
 
 COPY . .
