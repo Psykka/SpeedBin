@@ -2,7 +2,6 @@ const router = require('express').Router()
 const db = require('../utils/database')
 const rateLimit = require('express-rate-limit')
 
-
 router.post('/:id?', rateLimit({
   windowMs: 15 * 60 * 1000,
   max: 20,
