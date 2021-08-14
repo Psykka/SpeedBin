@@ -14,13 +14,13 @@ const editor = CodeMirror.fromTextArea(document.getElementById('textarea'), {
   lineWrapping: true
 })
 
-const codeID = window.location.href.split(window.location.hostname).pop()
+const codeID = window.location.pathname
 
 if (codeID != '/') {
   const div = document.getElementsByTagName('header')[0].appendChild(document.createElement('div'))
   div.classList.add('load')
   div.innerHTML = '<spam>Loading</spam>'
-  fetch(`/raw${codeID}`)
+  fetch(`/raw${codeID}?noHTML=true`)
     .then(res => {
       if (res.status == 400) { window.location.href = '/'; return };
 
@@ -39,9 +39,9 @@ if (codeID != '/') {
 buttons.save.onclick = async function () {
   const code = editor.getValue()
   if (!code) return
-  const data = await fetch('/documents', { method: 'POST', body: code })
+  await fetch('/documents', { method: 'POST', body: code })
     .then(res => res.json())
-    .then(data => window.location.href = `/${data.key}`)
+    .then(data => window.location.href = `/${data.id}`)
 }
 
 buttons.edit.onclick = function () {
