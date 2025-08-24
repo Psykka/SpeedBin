@@ -24,6 +24,7 @@
     "@t3-oss/env-nextjs": "^0.12.0",
     "drizzle-orm": "^0.41.0",
     "drizzle-zod": "^0.8.3",
+    "lucide-react": "^0.541.0",
     "nanoid": "^5.1.5",
     "next": "^15.2.3",
     "react": "^19.0.0",

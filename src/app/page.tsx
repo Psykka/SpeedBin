@@ -1,11 +1,15 @@
-import path from "node:path";
-import fs from "node:fs";
 import { App } from "@/components/app";
 
+const BRANCH = 'refs/heads/main';
+
 async function getReadmeText() {
-  const readmePath = path.join(process.cwd(), 'README.md');
-  const content = fs.readFileSync(readmePath, 'utf8');
-  return content;
+  const res = await fetch(`https://raw.githubusercontent.com/Psykka/SpeedBin/${BRANCH}/README.md`);
+
+  if (!res.ok) {
+    return "";
+  }
+
+  return res.text();
 }
 
 export default async function HomePage() {
