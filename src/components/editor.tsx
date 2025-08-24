@@ -1,11 +1,16 @@
+"use client"
+import CodeMirror from '@uiw/react-codemirror';
+import { midnightPurpleDarkTheme } from "./ui/code-mirror-theme";
+import { javascript } from "@codemirror/lang-javascript"
+
 export function Editor({ content }: { content?: string }) {
     return (
-        <div>
-            <h2>Code Editor</h2>
-            <textarea
-                defaultValue={content}
-                style={{ width: "100%", height: "300px", fontFamily: "monospace" }}
-            />
-        </div>
+        <CodeMirror
+            value={content}
+            onChange={() => { }}
+            theme={midnightPurpleDarkTheme}
+            extensions={[javascript()]}
+            height="100vh"
+        />
     );
 }

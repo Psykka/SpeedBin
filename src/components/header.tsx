@@ -49,7 +49,7 @@ export function HeaderButton({ title, icon, action }: Button) {
 
 export function Header() {
     return (
-        <header className="sm:absolute bg-midnightpurple-secondary top-0 right-0 flex flex-col items-center select-none mb-2">
+        <header className="sm:absolute bg-midnightpurple-secondary top-0 right-0 flex flex-col items-center select-none mb-2 z-1">
             <div className="text-4xl font-logo py-2 italic text-midnightpurple-foreground group">
                 <span className="logo transition-[text-shadow] duration-150">
                     Speed
