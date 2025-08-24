@@ -3,7 +3,7 @@ import { Header } from "./header";
 
 export function App({ content }: { content?: string }) {
     return (
-        <div className="h-screen bg-midnightpurple text-white">
+        <div className="bg-midnightpurple">
             <Header />
             <Editor content={content} />
         </div>

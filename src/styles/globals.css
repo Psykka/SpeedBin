@@ -1,8 +1,12 @@
 /* logo font */
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
 
 @import "tailwindcss";
+
+.group:hover .logo {
+  text-shadow: 1px 0px 1px var(--color-midnightpurple-foreground-secondary);
+}
 
 @theme {
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif,
@@ -15,8 +19,4 @@
   --color-midnightpurple-foreground: oklch(0.5148 0.0445 285);
   --color-midnightpurple-foreground-secondary: oklch(0.9411 0.028 285);
   --color-midnightpurple-muted: oklch(0.1261 0.0445 285);
-}
-
-.group:hover .logo {
-  text-shadow: 2px 0px 1px var(--color-midnightpurple-foreground-secondary);
 }

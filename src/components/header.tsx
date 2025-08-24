@@ -54,7 +54,7 @@ export function Header() {
                 <span className="logo transition-[text-shadow] duration-150">
                     Speed
                 </span>
-                <span className="font-black">
+                <span className="font-bold">
                     Bin
                 </span>
             </div>
